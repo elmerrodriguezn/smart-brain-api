@@ -1,0 +1,11 @@
+version: '3.7'
+
+services:
+  smart-bran-api:
+    container_name: backend
+    # image: node:8.15.1
+    build: ./
+    command: npm start
+    working_dir: /app
+    ports:
+      - "3000:3000"
