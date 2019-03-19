@@ -4,8 +4,8 @@ services:
   smart-bran-api:
     container_name: backend
     # image: node:8.15.1
-    build: ./
+    build: ./s
     command: npm start
-    working_dir: /app
+    working_dir: /usr/src/smart-brain-api
     ports:
       - "3000:3000"

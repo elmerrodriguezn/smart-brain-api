@@ -1,6 +1,6 @@
 FROM node:carbon
 
-WORKDIR /urs/src/smart-brain-api
+WORKDIR /usr/src/smart-brain-api
 
 COPY ./ ./
 
