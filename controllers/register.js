@@ -17,6 +17,8 @@ const handleRegister = (req, res, db, bcrypt) => {
           .insert({
             email: loginEmail[0],
             name: name,
+            age: age,
+            pet: pet,
             joined: new Date()
           })
           .then(user => {
@@ -32,5 +34,3 @@ const handleRegister = (req, res, db, bcrypt) => {
 module.exports = {
   handleRegister: handleRegister
 };
-
-
